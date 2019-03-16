@@ -101,7 +101,7 @@ class APICache
     cache_state = cache.state
 
     if cache_state == :current
-      APICache.logger.debug "APICache #{@key}: Returning from cache"
+      APICache.logger.debug "APICache #{key}: Returning from cache"
       cache.get
     else
       begin

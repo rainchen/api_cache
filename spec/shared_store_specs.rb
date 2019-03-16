@@ -26,9 +26,9 @@ shared_examples "generic store" do
 
   it "should be possible to delete" do
     store.set("foo", "bar")
-    store.delete("key")
-    store.exists?("key").should == false
-    store.get("key").should == nil
+    store.delete("foo")
+    store.exists?("foo").should == false
+    store.get("foo").should == nil
   end
 
   unless @skip_created_at_deletion

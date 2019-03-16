@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency('rspec', "~> 2.7")
   s.add_development_dependency('webmock')
-  s.add_development_dependency('rake')
+  s.add_development_dependency('rake', "~> 10.4")
   s.add_development_dependency('moneta', "~> 0.7")
   s.add_development_dependency('dalli')
 end
